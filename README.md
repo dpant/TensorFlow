@@ -1,4 +1,4 @@
-# Tensorfflow Specialization on Coursera 
+# Tensorflow Specialization on Coursera 
 
 Programming assignments, high level learning ideas from all courses in the Coursera [TensorFlow specilization ](https://www.coursera.org/professional-certificates/tensorflow-in-practice) .
 
