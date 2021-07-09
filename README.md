@@ -8,7 +8,7 @@ This repo contains my work for this specialization. The code base, quiz question
 ## Programming Assignments
 This page will describe in short about each project, the core learning and some tips.
 
-### Course 1: Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning
+### [Course 1: Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning](https://www.coursera.org/learn/introduction-tensorflow/home/welcome)
   This course mainly talk about the how to implement some of the classification task in tensorflow using (deep neural network and CNN). Here is the week wise summary of the course.
   -  Week 1: Talks mainly about a very basic model (sort of hello world of tensorflow) for fitting a model in hourse price data. 
   -  Week 2: Introduce to deep neural network (2 layer) as well as idea of callback to stop training when the desired accuracy is achieved.The labs uses training on fashion MNIST (10 labels) and digit MNIST dataset (10 labels). Both of these dataset have small (28x28) images centred around objects. This make achieving high accuracy feasible. With little effort on these task we can achieve >90% training accuracy. Digit MNIST is easier to train and even a 2 layer deep network can achieve 99% accuracy. Fashion MNIST (2 layerdeep ) is able to achieve ~90% accuracy.
