@@ -5,8 +5,14 @@ Programming assignments, high level learning ideas from all courses in the Cours
 ## Credits
 This repo contains my work for this specialization. The code base, quiz questions and diagrams are taken from the [TensorFlow specilization ](https://www.coursera.org/professional-certificates/tensorflow-in-practice), unless specified otherwise.
 
-## Programming Assignments
+## Programming Projects
 This page will describe in short about each project, the core learning and some tips.
+
+
+| Project Name | Task | Training set size | Validation Set Size | Architechure | Epochs | Training Accuracy | validation Accuracy | Notes |
+
+| --- | --- | --- | --- | --- | --- | --- |
+
 
 ### [Course 1: Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning](https://www.coursera.org/learn/introduction-tensorflow/home/welcome)
   This course mainly talk about the how to implement some of the classification task in tensorflow using deep neural network and CNN. Here is the week wise summary of the course.
