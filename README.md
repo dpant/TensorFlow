@@ -17,3 +17,9 @@ This page will describe in short about each project, the core learning and some 
   - High level ideas are capured in [Summary of Tensorflow course #1](https://github.com/dpant/TensorFlow/blob/main/Course_1_full_summary.ipynb) 
   - Individual weeks labs are captured at [course 1 labs](https://github.com/dpant/TensorFlow/tree/main/Course1)
   
+### [Course 2: Convolutional Neural Networks in TensorFlow](https://www.coursera.org/learn/convolutional-neural-networks-tensorflow/home/welcome)
+  This course mainly teach about the how to implement CNN's and associated tips.
+  -  Week 1: Talks about taking real world images and do a classification task. The data in this project is not very clean and images are not fixed size of centered around the object. There are multiple objects in some of the images. The main idea is to use ImageDataGenerator class to read the data, prepare its labels, resize it appropriately.
+  -  [Project #1: Cata and dogs classificaiton using 3K images.](https://github.com/dpant/TensorFlow/blob/main/Course2/catVsDogs3KDataPoint%20%20-%20Notebook.ipynb)
+     - This project shows how to do data preprocessing and generating labels using ImageDataGenerator objects. These objects can be training_generator and validation_generator which can be directly fed into the model.fit().This project is overfitting. Training accuracy is >98% while validation test is ~70%. Its a huge gap! and this is partly because we don't have sufficient data for this task (~2K traiing images)   
+  
