@@ -8,10 +8,10 @@ This repo contains my work for this specialization. The code base, quiz question
 ## Programming Projects
 This page will describe in short about each project, the core learning and some tips.
 
-
-| Project Name | Task | Training set size | Validation Set Size | Architechure | Epochs | Training Accuracy | validation Accuracy | Notes |
-
-| --- | --- | --- | --- | --- | --- | --- |
+| Project Name | Task | Training set size | Validation Set Size | Architechure | Epochs | Training Accuracy | validation Accuracy | Training time per epoch | Notes |
+| ------------ | ---- | ----------------- | ------------------- | ------------ | ------ | ----------------- | ------------------- | ----- | ------ | 
+| Fashion MNIST| MultiClass Classification (10) | 60K | 10K | DNN (512x512) | 50 | 97.6% | 89% | 4 sec | Nicely centered 28x28 images |  
+| Digit MNIST| MultiClass Classification (10) | 60K | 10K | DNN (512x512)| 50 | 99.8% | 98.1% | 4 sec | Nicely centered 28x28 images. |  
 
 
 ### [Course 1: Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning](https://www.coursera.org/learn/introduction-tensorflow/home/welcome)
