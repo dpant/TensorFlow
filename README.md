@@ -11,7 +11,11 @@ This page will describe in short about each project, the core learning and some 
 | Project Name | Task | Training set size | Validation Set Size | Architechure | Epochs | Training Accuracy | validation Accuracy | Training time per epoch | Notes |
 | ------------ | ---- | ----------------- | ------------------- | ------------ | ------ | ----------------- | ------------------- | ----- | ------ | 
 | Fashion MNIST| MultiClass Classification (10) | 60K | 10K | DNN (512x512) | 50 | 97.6% | 89% | 4 sec | Nicely centered 28x28 images |  
+| Fashion MNIST| MultiClass Classification (10) | 60K | 10K | CNN (2 layers + dense)| 50 | 99.6% | 90.81% | 5 sec | Nicely centered 28x28 images. |  
 | Digit MNIST| MultiClass Classification (10) | 60K | 10K | DNN (512x512)| 50 | 99.8% | 98.1% | 4 sec | Nicely centered 28x28 images. |  
+| Digit MNIST| MultiClass Classification (10) | 60K | 10K | CNN (2 layer + dense) | 50 | 99.99% | 99.31% | 5 sec | Nicely centered 28x28 images. |  
+| Emoji detection| Binary Classification (10) | 60K | 10K | CNN (2 layer + dense) | 50 | 99.99% | 99.31% | 5 sec | Nicely centered 28x28 images. |  
+| Horse vs human| Binary Classification (10) | 60K | 10K | CNN (2 layer + dense) | 50 | 99.99% | 99.31% | 5 sec | Nicely centered 28x28 images. |  
 
 
 ### [Course 1: Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning](https://www.coursera.org/learn/introduction-tensorflow/home/welcome)
