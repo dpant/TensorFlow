@@ -15,6 +15,12 @@ This page will describe in short about each project, the core learning and some 
 | Digit MNIST| MultiClass Classification (10) | 60K | 10K | DNN (512x512)| 50 | 99.8% | 98.1% | 4 sec | Nicely centered 28x28 images. |  
 | Digit MNIST| MultiClass Classification (10) | 60K | 10K | CNN (2 layers + dense) | 50 | 99.99% | 99.31% | 5 sec | Nicely centered 28x28 images. |  
 | Horse vs Human| Binary Classification (2) | 1K | 512 | CNN (5 layers + dense) | 50 | 100% | 84% | 8 sec | Centered 300x300 CGI images. |  
+| Horse vs Human with data agumentation| Binary Classification (2) | 1K | 512 | CNN (5 layers + dense) | 100 | 95.4% | 63.28% | 8 sec | Data agumentation didn't helped as images validation set is similar to training set |
+| Cats Vs Dog | Binary Classification (2) | 2K | 1K | CNN (4 layers + dense) | 100 | 100% | 75% | 9 sec | Various size imags scraped from internet.(Kaggle) |
+| Cats Vs Dog with data agumentation| Binary Classification (2) | 2K | 1K | CNN (4 layers + dense) |  | 84.2% | 79.6% | 16 sec | Data agumentation helped  |
+| Cats Vs Dog | Binary Classification (2) | 22.5K | 2.5K | CNN (3 layers + dense) | 15 | 85% | 85% | 100 sec | Various size imags scraped from internet.(Kaggle) |
+| Cats Vs Dog with data agumentation| Binary Classification (2) | 22.5K | 2.5K | CNN (3 layers + dense) | 15 | 73% | 70% | 300 sec | Data agumentation didn't help  |
+
 
 
 ### [Course 1: Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning](https://www.coursera.org/learn/introduction-tensorflow/home/welcome)
