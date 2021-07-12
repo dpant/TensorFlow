@@ -16,12 +16,12 @@ This page will describe in short about each project, the core learning and some 
 | Digit MNIST| MultiClass Classification (10) | 60K | 10K | CNN (2 layers + dense) | 50 | 99.99% | 99.31% | 5 sec | Nicely centered 28x28 images. |  
 | Horse vs Human| Binary Classification (2) | 1K | 512 | CNN (5 layers + dense) | 50 | 100% | 84% | 8 sec | Centered 300x300 CGI images. |  
 | Horse vs Human with data agumentation| Binary Classification (2) | 1K | 512 | CNN (5 layers + dense) | 100 | 95.4% | 63.28% | 8 sec | Data agumentation didn't helped as images validation set is similar to training set |
+| Horse vs Human| Binary Classification (2) | 1K | 512 | Inception model (Transfer learning) | 10 | 99.7% | 99.6% | 12 sec | Transfer learning brings high accuracy! |  
 | Cats Vs Dog | Binary Classification (2) | 2K | 1K | CNN (4 layers + dense) | 100 | 100% | 75% | 9 sec | Various size imags scraped from internet.(Kaggle) |
 | Cats Vs Dog with data agumentation| Binary Classification (2) | 2K | 1K | CNN (4 layers + dense) | 100  | 84.2% | 79.6% | 16 sec | Data agumentation helped  |
-| Cats Vs Dog | Binary Classification (2) | 2K | 1K | Inception Model (transfer learning) | 20 | 95.4% | 95.20% | 20 sec | Transfer learning brings accuracy! |
+| Cats Vs Dog | Binary Classification (2) | 2K | 1K | Inception Model (transfer learning) | 20 | 95.4% | 95.20% | 20 sec | Transfer learning brings high accuracy! |
 | Cats Vs Dog | Binary Classification (2) | 22.5K | 2.5K | CNN (3 layers + dense) | 15 | 85% | 85% | 100 sec | Various size imags scraped from internet.(Kaggle) |
 | Cats Vs Dog with data agumentation| Binary Classification (2) | 22.5K | 2.5K | CNN (3 layers + dense) | 15 | 73% | 70% | 300 sec | Data agumentation didn't help  |
-
 
 
 ### [Course 1: Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning](https://www.coursera.org/learn/introduction-tensorflow/home/welcome)
@@ -50,3 +50,9 @@ For the validation set the transformations are not applied. [Keras ImageDataGene
      - [Project #4: Horse vs human classificaiton using 1K images + data agumentation.](https://github.com/dpant/TensorFlow/blob/main/Course2/HorseVsHumanDataAgumentation.ipynb) 
           - Notice that Data Agumentation does not always help in reducing the overfitting (gap between accuracy of training,validation). For example the horse vs human applying data agumentation did not yeild good result.So data agumentation is not a substitute of good quality diverse image data. In this particular project both train and validation set have similar type of data (images) so doing data agumentation did not helped (In fact added random noise in training and validation accuracy). At the end of 100 epochs we have 95% training accuracy vs 63% validation accuracy.Validating accuracy fluctuate widely here as we are chainging the training set in every epoch by adding random transformations.
       
+ -  **Week 3:** Transfer learning.  Transfer learning is a very good way to bootstrap your model. Use a pretrained model (with lots of data + weeks of GPU training), add few layers at the end of model, retrain with your own data and reap the benefit of transfer learning. Often the benefits of using transfer learnign is > 10% in training and validatino sets.Keras  provide a good API for this. Keras have many pretrained network (with their weights). [Keras pretrained models](https://www.tensorflow.org/api_docs/python/tf/keras/applications). Also you can use the weights= parameters to specify picking up pre-trained weights or use a file to supply weights.        
+     - [Project #5: Cats vs dogs classificaiton using 3K images using transfer learning.](https://github.com/dpant/TensorFlow/blob/main/Course3/TransferLearningInceptionModelCatsVsDogs3k.ipynb)
+        - Transfer learning help immensely in this dataset. The accuracy bumped up to 95% (for both training and validation). This is > 10% improvement. Transfer learning is very widely used. 
+     - [Project #6: Horse vs Human classificaiton using 1K images using transfer learning.](https://github.com/dpant/TensorFlow/blob/main/Course3/TransferLearningInceptionModelHorsesvsHumans1K.ipynb)
+        - Transfer learning help immensely in this dataset. The accuracy bumped up to 99% (for both training and validation). This is > 16% improvement. Transfer learning is very widely used and gives good results.
+     
