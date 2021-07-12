@@ -22,7 +22,7 @@ This page will describe in short about each project, the core learning and some 
 | Cats Vs Dog | Binary Classification (2) | 2K | 1K | Inception Model (transfer learning) | 20 | 95.4% | 95.20% | 20 sec | Transfer learning brings high accuracy! |
 | Cats Vs Dog | Binary Classification (2) | 22.5K | 2.5K | CNN (3 layers + dense) | 15 | 85% | 85% | 100 sec | Various size imags scraped from internet.(Kaggle) |
 | Cats Vs Dog with data agumentation| Binary Classification (2) | 22.5K | 2.5K | CNN (3 layers + dense) | 15 | 73% | 70% | 300 sec | Data agumentation didn't help  |
-
+| Sign language detection | Multiclass Classification (26) | 27.5K | 7K | CNN (2 layers + dense) | 20 | 87% | 93% | 30 sec |   |
 
 ### [Course 1: Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning](https://www.coursera.org/learn/introduction-tensorflow/home/welcome)
   This course mainly talk about the how to implement some of the classification task in tensorflow using deep neural network and CNN. Here is the week wise summary of the course.
@@ -51,8 +51,11 @@ For the validation set the transformations are not applied. [Keras ImageDataGene
           - Notice that Data Agumentation does not always help in reducing the overfitting (gap between accuracy of training,validation). For example the horse vs human applying data agumentation did not yeild good result.So data agumentation is not a substitute of good quality diverse image data. In this particular project both train and validation set have similar type of data (images) so doing data agumentation did not helped (In fact added random noise in training and validation accuracy). At the end of 100 epochs we have 95% training accuracy vs 63% validation accuracy.Validating accuracy fluctuate widely here as we are chainging the training set in every epoch by adding random transformations.
       
  -  **Week 3:** Transfer learning.  Transfer learning is a very good way to bootstrap your model. Use a pretrained model (with lots of data + weeks of GPU training), add few layers at the end of model, retrain with your own data and reap the benefit of transfer learning. Often the benefits of using transfer learnign is > 10% in training and validatino sets.Keras  provide a good API for this. Keras have many pretrained network (with their weights). [Keras pretrained models](https://www.tensorflow.org/api_docs/python/tf/keras/applications). Also you can use the weights= parameters to specify picking up pre-trained weights or use a file to supply weights.        
-     - [Project #5: Cats vs dogs classificaiton using 3K images using transfer learning.](https://github.com/dpant/TensorFlow/blob/main/Course3/TransferLearningInceptionModelCatsVsDogs3k.ipynb)
+     - [Project #5: Cats vs dogs classificaiton using 3K images using transfer learning.](https://github.com/dpant/TensorFlow/blob/main/Course2/TransferLearningInceptionModelCatsVsDogs3k.ipynb)
         - Transfer learning help immensely in this dataset. The accuracy bumped up to 95% (for both training and validation). This is > 10% improvement. Transfer learning is very widely used. 
-     - [Project #6: Horse vs Human classificaiton using 1K images using transfer learning.](https://github.com/dpant/TensorFlow/blob/main/Course3/TransferLearningInceptionModelHorsesvsHumans1K.ipynb)
+     - [Project #6: Horse vs Human classificaiton using 1K images using transfer learning.](https://github.com/dpant/TensorFlow/blob/main/Course2/TransferLearningInceptionModelHorsesvsHumans1K.ipynb)
         - Transfer learning help immensely in this dataset. The accuracy bumped up to 99% (for both training and validation). This is > 16% improvement. Transfer learning is very widely used and gives good results.
      
+-  **Week 4:** MultiClass Classification. Multiclass classifiction is very similar to binary classification. We just have to adjust the loss function and output layer of the neural network to be softmax.
+     - [Project #7: Kaggle Sign language detection.](https://github.com/dpant/TensorFlow/blob/main/Course3/TransferLearningInceptionModelCatsVsDogs3k.ipynb)
+        - This project detect the sign language. It have 27K images for training and additional 7k for validation. The output labels are 26 (corresponding to A-Z). Using a simple 2 Conv layer --> Dense layer model we were able to achive validation accuracy of 93%. [Kaggle link for data and more about dataset](https://www.kaggle.com/datamunge/sign-language-mnist)
