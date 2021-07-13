@@ -70,7 +70,7 @@ For the validation set the transformations are not applied. [Keras ImageDataGene
   -  **Week 2:** To attach meaning (sense of closeness for related word) one need to find the embedding (usually the first layer of NN) of each word. Embedding can either be learned as a part of NN or we can use pre-existing embedding (sort of transfer learning). So the  NLP traiing flow looks like:
         - Tokenize --> ConvertToIntegerCode --> Padding (same size) --> Embedding (generate encoding in vector space for closeness) --> NeuralNetwork   
         - Tensor flow provide lot of pre packed datasets for experimentation and learning https://www.tensorflow.org/datasets/catalog/overview
-          https://projector.tensorflow.org/ is a resource to view the embedding if you have dumped the embedding files.  
+        - https://projector.tensorflow.org/ is a resource to view the embedding if you have dumped the embedding files.  
        -  [Project #2: Moview review sentiment analysis (IMDB).](https://github.com/dpant/TensorFlow/blob/main/Course3-NLP/imdbReviewClassificationEmbedding.ipynb)
           - Movie sentiment classification. vocab_size = 10000 embedding_dim = 16 , traiing example = 250K , validation example 250K. Training accuracy 100% , Validation accuracy 82%
           
