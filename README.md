@@ -59,3 +59,19 @@ For the validation set the transformations are not applied. [Keras ImageDataGene
 -  **Week 4:** MultiClass Classification. Multiclass classifiction is very similar to binary classification. We just have to adjust the loss function and output layer of the neural network to be softmax.
      - [Project #7: Kaggle Sign language detection.](https://github.com/dpant/TensorFlow/blob/main/Course2/KaggleSignDetectionMultiClassClassification.ipynb)
         - This project detect the sign language. It have 27K images for training and additional 7k for validation. The output labels are 26 (corresponding to A-Z). Using a simple 2 Conv layer --> Dense layer model we were able to achive validation accuracy of 93%. Since the dataset is large and mostly have well centered single images it is not hard to get a good accuarcy in validation set. [Kaggle link for data and more about dataset](https://www.kaggle.com/datamunge/sign-language-mnist)
+
+### [Course 3: Convolutional Neural Networks in TensorFlow](https://www.coursera.org/learn/natural-language-processing-tensorflow/home/welcome)
+  This course mainly teaches about the how to implement NLP application and associated tips. 
+  -  **Week 1:** Talks mainly about encoding the text data using tensorflow Tokenizer() objects and its helper functions like fit_to_texts (for creating the dictionary for encoding) and text_to_sequences for converting the sentences to numeric list of encoded numbers. Also the pad_sequences() object is very useful to make all sequences of same size (either by prefix padding or post padding and truncating). The final data should be of same size example to be fed into neuralnetwork so these steps are necessary. At the end of pad_sequence() we get all our data in one big matrix with (# of sentences, max len) Encoding the strings to number is the first step to prepare it to feed to neural network (embedding layer of dense layer). 
+
+      -  [Project #1: Tokenization of BBC news dataset.](https://github.com/dpant/TensorFlow/blob/main/Course3-NLP/BBCdataSetTokenization.ipynb)
+          - This project remove stopwords, tokenize the sentenses ,assign each word a unique code, pad sentences with 0, truncate larger then threshold sentences. This is done using Kera's API namely Tonkenizer() and pad_sequences()
+  
+  -  **Week 2:** To attach meaning (sense of closeness for related word) one need to find the embedding (usually the first layer of NN) of each word. Embedding can either be learned as a part of NN or we can use pre-existing embedding (sort of transfer learning). So the  NLP traiing flow looks like:
+        - Tokenize --> ConvertToIntegerCode --> Padding (same size) --> Embedding (generate encoding in vector space for closeness) --> NeuralNetwork   
+        - Tensor flow provide lot of pre packed datasets for experimentation and learning https://www.tensorflow.org/datasets/catalog/overview
+          https://projector.tensorflow.org/ is a resource to view the embedding if you have dumped the embedding files.  
+       -  [Project #2: Moview review sentiment analysis (IMDB).](https://github.com/dpant/TensorFlow/blob/main/Course3-NLP/imdbReviewClassificationEmbedding.ipynb)
+          - Movie sentiment classification. vocab_size = 10000 embedding_dim = 16 , traiing example = 250K , validation example 250K. Training accuracy 100% , Validation accuracy 82%
+          
+     
