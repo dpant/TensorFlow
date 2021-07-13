@@ -67,7 +67,7 @@ For the validation set the transformations are not applied. [Keras ImageDataGene
       -  [Project #1: Tokenization of BBC news dataset.](https://github.com/dpant/TensorFlow/blob/main/Course3-NLP/BBCdataSetTokenization.ipynb)
           - This project remove stopwords, tokenize the sentenses ,assign each word a unique code, pad sentences with 0, truncate larger then threshold sentences. This is done using Kera's API namely Tonkenizer() and pad_sequences()
   
-  -  **Week 2:** To attach meaning (sense of closeness for related word) one need to find the embedding (usually the first layer of NN) of each word. Embedding can either be learned as a part of NN or we can use pre-existing embedding (sort of transfer learning). So the  NLP traiing flow looks like:
+  -  **Week 2:** To attach meaning (sense of closeness for related word) one need to find the embedding (usually the first layer of NN) of each word. Embedding can either be learned as a part of NN or we can use pre-existing embedding (sort of transfer learning). So the  NLP training flow looks like:
         - Tokenize --> ConvertToIntegerCode --> Padding (same size) --> Embedding (generate encoding in vector space for closeness) --> NeuralNetwork   
         - Tensor flow provide lot of pre packed datasets for experimentation and learning https://www.tensorflow.org/datasets/catalog/overview
         - https://projector.tensorflow.org/ is a resource to view the embedding if you have dumped the embedding files.  
