@@ -81,7 +81,7 @@ For the validation set the transformations are not applied. [Keras ImageDataGene
       -  If your training accuracy is low, this implies bad preprocessing (use nltk for stemming, stop word removal etc). You can also use pretrained model like transformers  (transer learning) or make your model more complex (more layers etc) 
       -  Also in some cases you can use [CONV1D layer instead of LSTM](https://datascience.stackexchange.com/questions/78030/multivariate-time-series-analysis-when-is-a-cnn-vs-lstm-appropriate).
       
-    - [Project #3: Moview review sentiment analysis (IMDB).](https://github.com/dpant/TensorFlow/blob/main/Course3-NLP/imdbReviewClassificationEmbedding.ipynb)
+      - [Project #3: Moview review sentiment analysis (IMDB).](https://github.com/dpant/TensorFlow/blob/main/Course3-NLP/imdbReviewClassificationEmbedding.ipynb)
           - Movie sentiment classification. vocab_size = 10000 embedding_dim = 16 , traiing example = 25K , validation example 25K. Training accuracy 100% , Validation accuracy 82% (Overfitting!)
 
           
