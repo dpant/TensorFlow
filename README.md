@@ -78,8 +78,8 @@ For the validation set the transformations are not applied. [Keras ImageDataGene
           - Movie sentiment classification. vocab_size = 10000 embedding_dim = 16 , traiing example = 25K , validation example 25K. Training accuracy 100% , Validation accuracy 82% (Overfitting!)
 
   -  **Week 3:** Word embedding is *good in capturing single word meaning* but it does not capture the *context or meaning of word due to its surrondings*. To capture context (semantics) we either need to use RNN,LSTM,GRU cells. RNN is good to capture nearby context (short range contexts). RNN did suffer with vanishing/exploding gradient problems also. LSTM (or GRU) is a fix for avoiding vanishing gradient and capturing long range dependencies (context). Long range dependencies are very common in natural languages. These RNN/GRU/LSTM layer can be stacked too generating deep RNN or Deep LSTM's
-      -  Look out of overfitting in NLP training. Use droputs, or pretrained embedding to reduce overfitting.
-      -  If your training accuracy is low, this implies bad preprocessing (use nltk for stemming, stop word removal etc). You can also use pretrained model like transformers  (transer learning) or make your model more complex (more layers etc) 
+      -  Look out of overfitting in NLP training. Use droputs and pretrained embedding (trained on large corpus and high dimentional vector) to reduce overfitting.
+      -  If your training accuracy is low, this might be due to missing preprocessing: use nltk for stemming, stop word removal etc. You can also use pretrained model like transformers  (transer learning) or make your model more complex (adding more layers etc). Drastic improvement come when you use transfer learning correctly!
       -  Also in some cases you can use [CONV1D layer instead of LSTM](https://datascience.stackexchange.com/questions/78030/multivariate-time-series-analysis-when-is-a-cnn-vs-lstm-appropriate).
       
       - [Project #3: Moview review sentiment analysis (IMDB).](https://github.com/dpant/TensorFlow/blob/main/Course3-NLP/imdbReviewClassificationEmbedding.ipynb)
