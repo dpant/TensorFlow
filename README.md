@@ -85,5 +85,8 @@ For the validation set the transformations are not applied. [Keras ImageDataGene
       - [Project #3: Moview review sentiment analysis (IMDB).](https://github.com/dpant/TensorFlow/blob/main/Course3-NLP/imdbReviewClassificationEmbedding.ipynb)
           - Movie sentiment classification. vocab_size = 10000 embedding_dim = 16 , traiing example = 25K , validation example 25K. Training accuracy 100% , Validation accuracy 82% (Overfitting!)
 
+      - [Project #4: Twitter Sentiment analysis Kaggle dataset(sentiment140).](https://github.com/dpant/TensorFlow/blob/main/TweetsSentiments-GloveEmbedding300d.ipynb)
+          - Tweet sentiment classification. This is multiclass classification problem labels negativity label 0-4, Using 300d embedding (Glove) training example = 160K, validation example 40K. Training accuracy 79% , Validation accuracy 74%. Training the model on 300d (Golve embedding) made all the difference. 100d (Glove embedding) only givae ~50% accuracy.
+
           
      
